@@ -1,0 +1,41 @@
+/*bakrund*/
+.bak {
+    width: 90vw;
+    height: 90vh;
+    left: 10%;
+    top: 10%;
+    background-image: url(bakrund1.jpg);
+    background-size: cover;
+   
+    position: absolute;
+}
+
+.topbar{
+    background-color: greenyellow;
+    width: 90%;
+    left: 10%;
+    position: absolute;
+    top: 0%;
+    height: 10%;
+    text-align: center;
+    
+}
+
+
+/*navbar*/
+.lefbar{
+    background-color: chartreuse;
+    left: 0%;
+    top: 0%;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+}
+
+.btninf {
+    position: absolute;
+    left: 2%;
+    top: 12%;
+    color: chartreuse;
+    background-color: chartreuse;
+} 

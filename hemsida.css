@@ -37,9 +37,11 @@
 .btnbea,
 .btnmut {
     position: absolute;
-    background-color: rgb(204, 195, 17);
+    background-color: black;
+    color: chartreuse;
+    border: 1px solid chartreuse;
     padding: 0.8rem 1rem;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btnstart {
@@ -62,9 +64,8 @@
 .btnarm:hover,
 .btnbea:hover,
 .btnmut:hover {
-    background-color: yellowgreen;
+    background-color: rgb(56, 55, 55);
     cursor: pointer;
-    
 }
 /*slut av navbar*/
 

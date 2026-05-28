@@ -1,34 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 /*bakrund*/
 .bak {
-    width: calc(105% - 12%);
-    height: calc(110% - 10%);
+    width: 88%;
+    height: 90%;
     left: 12%;
     top: 10%;
     background-image: url(bakrund1.jpg);
     background-size: cover;
-   
     position: absolute;
 }
 
 .topbar{
     background-color: greenyellow;
-    width: calc(107% - 12%);
-    left: 10%;
+    width: 100%;
+    left: 0;
     position: absolute;
-    top: 0%;
+    top: 0;
     height: 10%;
     text-align: center;
-    
 }
 
 
 /*navbar*/
 .lefbar{
-    background-color: chartreuse;
+    background-color: greenyellow;
     left: 0%;
     top: 0%;
     width: 12%;
-    height: 110%;
+    height: 100%;
     position: absolute;
 }
 
@@ -38,27 +47,16 @@
 .btnmut {
     position: absolute;
     background-color: black;
-    color: chartreuse;
-    border: 1px solid chartreuse;
+    color: greenyellow;
+    border: 1px solid greenyellow;
     padding: 0.8rem 1rem;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.btnstart {
-    top: 13%;
-}
-
-.btnarm {
-    top: 33%;
-}
-
-.btnbea {
-    top: 53%;
-}
-
-.btnmut {
-    top: 73%;
-}
+.btnstart { top: 13%; }
+.btnarm { top: 33%; }
+.btnbea { top: 53%; }
+.btnmut { top: 73%; }
 
 .btnstart:hover,
 .btnarm:hover,
@@ -69,8 +67,9 @@
 }
 /*slut av navbar*/
 
-/* Mutations Table Styling */
-.mutation-table-container {
+
+/*styling för alla tabeller*/
+.tabell-container, .data-table-container {
     position: absolute;
     left: 12%;
     top: 10%;
@@ -86,45 +85,45 @@
     scrollbar-width: thin;
 }
 
-.mutation-table-container::-webkit-scrollbar {
+.tabell-container::-webkit-scrollbar, .data-table-container::-webkit-scrollbar {
     width: 10px;
 }
 
-.mutation-table-container::-webkit-scrollbar-track {
+.tabell-container::-webkit-scrollbar-track, .data-table-container::-webkit-scrollbar-track {
     background: rgba(40, 40, 40, 0.6);
     border-radius: 8px;
 }
 
-.mutation-table-container::-webkit-scrollbar-thumb {
+.tabell-container::-webkit-scrollbar-thumb, .data-table-container::-webkit-scrollbar-thumb {
     background: rgba(150, 150, 150, 0.8);
     border-radius: 8px;
 }
 
-.mutation-table-container::-webkit-scrollbar-thumb:hover {
+.tabell-container::-webkit-scrollbar-thumb:hover, .data-table-container::-webkit-scrollbar-thumb:hover {
     background: rgba(180, 180, 180, 0.9);
 }
 
-.mutation-table-container h2 {
+.tabell-container h2, .data-table-container h2 {
     text-align: center;
     color: greenyellow;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-.mutation-table-container h3 {
+.tabell-container h3, .data-table-container h3 {
     color: chartreuse;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-.mutation-table {
+.tabell, .data-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.mutation-table th {
+.tabell th, .data-table th {
     background-color: chartreuse;
     color: black;
     padding: 1rem;
@@ -133,23 +132,28 @@
     border: 2px solid greenyellow;
 }
 
-.mutation-table td {
+.tabell td, .data-table td {
     padding: 0.8rem 1rem;
     border: 1px solid greenyellow;
     color: white;
 }
 
-.mutation-table tr.section-row {
+.section-minirub {
     background-color: rgba(70, 130, 70, 0.9);
     color: white;
     text-align: center;
     font-weight: bold;
 }
 
-.mutation-table tr:nth-child(even) {
+.section-minirub td {
+    background-color: rgba(70, 130, 70, 0.9);
+}
+
+.tabell tr:nth-child(even), .data-table tr:nth-child(even) {
     background-color: rgba(50, 50, 50, 0.8);
 }
 
-.mutation-table tr:hover {
+.tabell tr:hover, .data-table tr:hover {
     background-color: rgba(100, 100, 0, 0.5);
 }
+/*slut av styling för alla tabeller*/
